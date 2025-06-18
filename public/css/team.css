@@ -24,12 +24,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-img{
-  width: 280px;
-  height: 300px;
-  object-fit: cover;
-}
-
 address {
     font-style: normal;
 }
@@ -205,6 +199,7 @@ h2 {
   justify-self: center;
   width: 340px;
   height: 380px;
+  object-fit: cover;
 }
 
 .modal-img-cont{
