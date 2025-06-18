@@ -1,0 +1,655 @@
+*Base*/ * {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h2 {
+  line-height: 29px;
+  font-family: "Playfair Display", serif;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.logo{
+  width: 250px;
+  height: 60px;
+}
+
+.svg{
+  height: 50px;
+  width: 50px;
+}
+
+
+.carousel-container{
+  width: 600px; /* 135 x 4 */
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border: none;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots button.active {
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  letter-spacing: inherit;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* -----------ХЕДЕР------- */
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu ul {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 30px;
+}
+
+/* -----------ХІРОО------- */
+.hero {
+  position: relative;
+  height: 800px;
+  background-image: url("./images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 80px;
+  right: 290px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: right;
+  border-bottom: 1px solid #fff;
+}
+
+.news-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* обрізати, зберігаючи пропорції */
+  object-position: center; /* центрувати зображення */
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  line-height: 29px;
+  letter-spacing: 8.5px;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+/* -----------ПРО НАС------- */
+.quats-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  width: 780px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.quats-container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  text-align: center;
+  color: #575757;
+  width: 1000px;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.about-card {
+  flex-direction: column;
+  display: flex;
+  width: 398px;
+  height: 400px;
+  background-color: #74484b;
+  color: #fff;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.about-card h4 {
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.about-card p {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* -----------ПЕРЕВАГИ------- */
+.advantages h2 {
+  text-align: center;
+}
+
+.adventage-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.adventage-card {
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.adventage-card h4 {
+  padding: 25px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.advantages-text {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.5;
+  padding: 12px 10px;
+  color: #000;
+}
+
+/* -----------СЕРВІСИ------- */
+.offers-card{
+  width: 470px;
+}
+
+.offers-card img{
+  overflow: hidden;
+  object-fit: cover;
+  width: 470px;
+  height: 260px;
+  margin-top: 10px;
+}
+
+/* -----------СЕРВІСИ------- */
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+.service {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Збереження квадратної форми */
+  overflow: hidden;
+  cursor: pointer;
+  border: 5px solid white; /* Рамка */
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.service img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  background-color: #74484b;
+}
+
+.service:hover img {
+  transform: scale(1.1);
+  filter: grayscale(80%);
+}
+
+.service-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+/* -----------СЕРВІСИ------- */
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.brands h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.brands-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  width: 780px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* -----------НОВИНИ------- */
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news h2 {
+  text-align: center;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.news-card {
+}
+
+.news-card div {
+  background: #74484b;
+  height: 300px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news-name {
+  padding: 25px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offers-card {
+  width: 470px;
+  height: 100%;
+}
+
+h2 {
+  justify-self: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.offers-text {
+  margin-top: 20px;
+  color: #575757;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px 10px 8px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border-bottom: 1px solid #000;
+}
+
+.form-container {
+    width: 480px;
+
+}
+
+.abaut-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+iframe{
+    width: 584px;
+    height: 570px;
+}
+
+.about-btn{
+    font-size: 12px;
+    text-transform: uppercase;
+    width: auto;
+    border-radius: 0;
+    padding: 15px 30px;
+    background: 0 0;
+    color: #30292a;
+    outline: 0;
+    border: 1px solid #000;
+    width: 160px;
+    transition: 0.3s;
+}
+
+.about-btn:hover{
+    background-color: #000;
+    color: white;
+}
+
+/* -----------футер------- */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column a.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+
+.subscribe-form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  width: 110px;
+}
+
+.subscribe-form button {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom .left strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.footer-botton{
+  font-size: 12px;
+  text-transform: uppercase;
+  width: auto;
+  border-radius: 0;
+  padding: 15px 30px;
+  background: 0 0;
+  color: #30292a;
+  outline: 0;
+  border: 1px solid #000;
+  width: 160px;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: #000;
+  color: white;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+footer{
+  margin-top: 30px;
+}
+
+.h4{
+  text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}

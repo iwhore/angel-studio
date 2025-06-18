@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/about-us.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
+        <a href="./index.html"><img class="logo" src="/images/logo.PNG" alt=""></a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="/index.html">ГОЛОВНА</a></li>
+            <li><a href="/pages/team.html">НАША КОМАНДА</a></li>
+            <li><a href="/pages/services.html">ПОСЛУГИ</a></li>
+            <li><a href="/pages/job.html">ВАКАНСІЇ</a></li>
+            <li><a href="/pages/about-us.html">ПРО НАC</a></li>
+            <li><a href="/pages/feedback.html">ВІДГУКИ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero-section container">
+        <div class="logo-circles">
+          <div class="circle filled text">○</div>
+          <div class="circle border"></div>
+          <div class="circle filled"></div>
+        </div>
+    
+        <h1 class="hero-title">Салон краси, <br /> створенний для вас</h1>
+        <p class="about-text">
+          Ми - команда професіоналів, яка прагне підкреслити вашу природну красу.<br />
+          Підпішіться на нас для того, щоб знати про всі новинки.
+        </p>
+    
+        <form class="subscribe-form">
+          <input type="email" placeholder="Email" required />
+          <button type="submit">Підпісатися</button>
+        </form>
+      </section>
+      <section class="galerry container">
+        <h2>НАШІ РОБОТИ</h2>
+        <p class="about-text">У нашій галереї ви знайдете фото, які відображають елегантність і майстерність наших стилістів. Від догляду за волоссям до унікального макіяжу.</p>
+        <div class="f-container">
+            <img src="/images/galery1.png" alt="">
+            <img src="/images/galery2.png" alt="">
+            <img src="/images/galery3.png" alt="">
+            <img src="/images/galery4.png" alt="">
+        </div>
+        <div class="big-container">
+            <img src="/images/galery5.png" alt="">
+        </div>
+        <div class="f-container">
+            <img src="/images/galery6.png" alt="">
+            <img src="/images/galery7.png" alt="">
+            <img src="/images/galery8.png" alt="">
+            <img src="/images/galery9.png" alt="">
+        </div>
+      </section>
+      <section class="container">
+        <h2>ПРОФЕСІЙНІ КОСМЕТОЛОГИ</h2>
+        <p class="about-text">Наші фахівці допоможуть вам розкрити вашу красу. Ми пропонуємо індивідуальний підхід до кожного клієнта, забезпечуючи якісний сервіс.</p>
+        <div class="workers-container">
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Віка</p>
+                <p class="work">Перукар-стиліст</p>
+              </div>
+              <button onclick="openEmployeeModal('Віка')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Вероніка</p>
+                <p class="work">Майстер з манікюру</p>
+              </div>
+              <button onclick="openEmployeeModal('Вероніка')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Марія</p>
+                <p class="work">Візажист</p>
+              </div>
+              <button onclick="openEmployeeModal('Марія')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Єлизавета</p>
+                <p class="work">Бровіст-ламінатор</p>
+              </div>
+              <button onclick="openEmployeeModal('Єлизавета')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Оксана</p>
+                <p class="work">Косметолог</p>
+              </div>
+              <button onclick="openEmployeeModal('Оксана')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Даша</p>
+                <p class="work">Майстер депіляції</p>
+              </div>
+              <button onclick="openEmployeeModal('Даша')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Влада</p>
+                <p class="work">Майстер з педикюру</p>
+              </div>
+              <button onclick="openEmployeeModal('Влада')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Саша</p>
+                <p class="work">Майстер з нарощування вій</p>
+              </div>
+              <button onclick="openEmployeeModal('Саша')">Переглянути</button>
+            </div>
+
+            <div class="one-container">
+              <div class="workers-info">
+                <p class="worker-name">Олена</p>
+                <p class="work">Масажист</p>
+              </div>
+              <button onclick="openEmployeeModal('Олена')">Переглянути</button>
+            </div>
+            <div class="modal" id="employee-modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-name"></h2>
+                <div class="modal-img-cont">
+                  <img class="modal-image" id="modal-image" src="" alt="" />
+                </div>
+                <p><strong>Посада:</strong> <span id="modal-position"></span></p>
+                <p><strong>Освіта:</strong> <span id="modal-education"></span></p>
+                <p><strong>Досвід:</strong> <span id="modal-experience"></span></p>
+                <p><strong>Попередні місця роботи:</strong> <span id="modal-previous"></span></p>
+                <p><strong>Працює у нас:</strong> <span id="modal-current-duration"></span></p>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="hero-step container">
+        <div class="hero-left">
+          <h1>Зробіть перший <br /> крок до краси</h1>
+          <p>
+            Не втрачайте шанс на покращення свого вигляду. Наші досвідчені майстри
+            готові реалізувати ваші найсміливіші побажання з краси, щоб ви почувалися
+            самими найчарівнішими.
+          </p>
+          <div class="hero-buttons">
+            <a href="/index.html" class="btn primary">Записатись →</a>
+            <a href="./services.html" class="btn secondary">Детальніше →</a>
+          </div>
+        </div>
+    
+        <div class="hero-right">
+          <div class="circle-bg">
+            <div class="logo-circles">
+              <div class="circle filled center-hole"></div>
+              <div class="circle border"></div>
+              <div class="circle filled"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-column">
+              <a class="logo">LOGO</a>
+              <p>
+                Залишайтеся на зв'язку з нами для отримання останніх новин та акцій. Ми завжди раді вас вітати!
+              </p>
+            </div>
+      
+            <div class="footer-column">
+              <h3>Посилання</h3>
+              <ul>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Наші послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Відгуки</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-column">
+              <h3>Акції</h3>
+              <ul>
+                <li><a href="#">Консультація</a></li>
+                <li><a href="#">Записатися</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Тренди</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-column">
+              <h3>Контакт</h3>
+              <ul>
+                <li><a href="#">Підписатися</a></li>
+                <li><a href="#">Команда експертів</a></li>
+                <li><a href="#">Інноваційні процедури</a></li>
+                <li><a href="#">Високоякісні продукти</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-column">
+              <h3>Переваги</h3>
+              <ul>
+                <li><a href="#">Наша місія</a></li>
+                <li><a href="#">Довіра клієнтів</a></li>
+                <li><a href="#">Творчий підхід</a></li>
+                <li><a href="#">Проєктування образу</a></li>
+              </ul>
+              <form class="subscribe-form">
+                <input type="email" placeholder="Email" required />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <div class="left">
+              <strong>Краса 24/7</strong>
+              <p>© Copyright 2025</p>
+            </div>
+            <div class="right social-icons">
+              <a href="#"><img src="https://img.icons8.com/ios-filled/20/x.png" alt="Close" /></a>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/20/pinterest--v1.png" alt="Pinterest" /></a>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/20/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/20/facebook.png" alt="Facebook" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        const employees = {
+          "Віка": { 
+            img: "/images/workers/vika.jpg",
+            position: "Перукар-стиліст",
+            education: "Національний університет біотехнологій та природокористування",
+            experience: "4 роки в індустрії краси",
+            previous: "BeautyZone, GlamStudio",
+            currentDuration: "2 роки"
+          },
+          "Вероніка": {
+            img: "/images/workers/veronika.jpg",
+            position: "Майстер з манікюру",
+            education: "Київський національний університет культури",
+            experience: "3 роки досвіду",
+            previous: "LuxBeauty",
+            currentDuration: "1 рік"
+          },
+          "Марія": {
+            img: "/images/workers/maria.jpg",
+            position: "Візажист",
+            education: "Медичний коледж ім. Пирогова",
+            experience: "5 років практики",
+            previous: "KosmoStyle",
+            currentDuration: "3 роки"
+          },
+          "Єлизавета": {
+            img: "/images/workers/elizabeth.jpg",
+            position: "Бровіст-ламінатор",
+            education: "Львівський інститут краси",
+            experience: "6 років",
+            previous: "Nail&Beauty Bar",
+            currentDuration: "2,5 роки"
+          },
+          "Оксана": {
+            img: "/images/workers/oksana.jpg",
+            position: "Косметолог",
+            education: "Технікум косметології, Харків",
+            experience: "7 років",
+            previous: "Beauty World",
+            currentDuration: "4 роки"
+          },
+          "Даша": {
+            img: "/images/workers/dasha.jpg",
+            position: "Майстер депіляції",
+            education: "Коледж естетики, Дніпро",
+            experience: "2 роки",
+            previous: "NewStyle",
+            currentDuration: "6 місяців"
+          },
+          "Влада": {
+            img: "/images/workers/vlada.jpg",
+            position: "Майстер з педикюру",
+            education: "Київський коледж краси",
+            experience: "3 роки",
+            previous: "Glamour Touch",
+            currentDuration: "1 рік"
+          },
+          "Саша": {
+            img: "/images/workers/sasha.jpg",
+            position: "Майстер з нарощування вій",
+            education: "Центр професійної косметології",
+            experience: "5 років",
+            previous: "CosmoBeauty",
+            currentDuration: "2 роки"
+          },
+          "Олена": {
+            img: "/images/workers/olena.jpg",
+            position: "Масажист",
+            education: "Луцький медичний коледж",
+            experience: "4 роки",
+            previous: "Esthetic Studio",
+            currentDuration: "1,5 роки"
+          }
+        };
+
+        function openEmployeeModal(name) {
+          const data = employees[name];
+          if (!data) return;
+
+          document.getElementById('modal-name').textContent = name;
+          document.getElementById('modal-image').src = data.img;
+          document.getElementById('modal-position').textContent = data.position;
+          document.getElementById('modal-education').textContent = data.education;
+          document.getElementById('modal-experience').textContent = data.experience;
+          document.getElementById('modal-previous').textContent = data.previous;
+          document.getElementById('modal-current-duration').textContent = data.currentDuration;
+
+          document.getElementById('employee-modal').style.display = 'block';
+        }
+
+        function closeModal() {
+          document.getElementById('employee-modal').style.display = 'none';
+        }
+      </script>
+  </body>
+</html>

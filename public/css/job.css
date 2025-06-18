@@ -1,0 +1,425 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.logo {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+h2 {
+  line-height: 29px;
+  font-family: "Playfair Display", serif;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  letter-spacing: inherit;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu ul {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 30px;
+}
+
+/*hero */
+.hero-section {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.logo-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.filled {
+  background-color: #000;
+}
+
+.filled.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.border {
+  border: 4px solid #000;
+  background-color: transparent;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-text{
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.hero-section .subscribe-form {
+  display: flex;
+  max-width: 700px;
+}
+
+.hero-section .subscribe-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero-section .subscribe-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #333;
+}
+
+h2 {
+  text-align: center;
+  justify-self: center;
+  margin-top: 60px;
+  width: 700px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 25px;
+}
+
+
+/* -----------вакансії------- */
+.vacancies {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vacancies h5 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+
+.vacancies p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.vacancy-card {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  text-align: left;
+  width: 900px;
+}
+
+.vacancy-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.details {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  color: #444;
+}
+
+.contact-section {
+  background: white;
+  max-width: 800px;
+  margin: 70px auto;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.submit-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-contact {
+  background: #999;
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-contact h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.office-box {
+  background: white;
+  color: #000;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.office-box span {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+
+/* -----------футер------- */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column a.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+
+.subscribe-form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  width: 110px;
+}
+
+.subscribe-form button {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom .left strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.social-icons a {
+  margin-left: 12px;
+  display: inline-block;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}

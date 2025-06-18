@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/team.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
+        <a href="./index.html"><img class="logo" src="/images/logo.PNG" alt=""></a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="/index.html">ГОЛОВНА</a></li>
+            <li><a href="/pages/team.html">НАША КОМАНДА</a></li>
+            <li><a href="/pages/services.html">ПОСЛУГИ</a></li>
+            <li><a href="/pages/job.html">ВАКАНСІЇ</a></li>
+            <li><a href="/pages/about-us.html">ПРО НАC</a></li>
+            <li><a href="/pages/feedback.html">ВІДГУКИ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container">
+        <h2>НАША КОМАНДА</h1>
+        <div class="team-grid">
+            <div class="news-card" data-name="Віка">
+            <div><img src="/images/workers/vika.jpg" alt="Віка" /></div>
+            <p class="news-name">Віка</p>
+          </div>
+          <div class="news-card" data-name="Вероніка">
+            <div><img src="/images/workers/veronika.jpg" alt="Вероніка" /></div>
+            <p class="news-name">Вероніка</p>
+          </div>
+          <div class="news-card" data-name="Марія">
+            <div><img src="/images/workers/maria.jpg" alt="Марія" /></div>
+            <p class="news-name">Марія</p>
+          </div>
+          <div class="news-card" data-name="Єлизавета">
+            <div><img src="/images/workers/elizabeth.jpg" alt="Єлизавета" /></div>
+            <p class="news-name">Єлизавета</p>
+          </div>
+          <div class="news-card" data-name="Оксана">
+            <div><img src="/images/workers/oksana.jpg" alt="Оксана" /></div>
+            <p class="news-name">Оксана</p>
+          </div>
+          <div class="news-card" data-name="Даша">
+            <div><img src="/images/workers/dasha.jpg" alt="Даша" /></div>
+            <p class="news-name">Даша</p>
+          </div>
+          <div class="news-card" data-name="Влада">
+            <div><img src="/images/workers/vlada.jpg" alt="Влада" /></div>
+            <p class="news-name">Влада</p>
+          </div>
+          <div class="news-card" data-name="Саша">
+            <div><img src="/images/workers/sasha.jpg" alt="Саша" /></div>
+            <p class="news-name">Саша</p>
+          </div>
+          <div class="news-card" data-name="Олена">
+            <div><img src="/images/workers/olena.jpg" alt="Олена" /></div>
+            <p class="news-name">Олена</p>
+          </div>
+            <div class="modal" id="employee-modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 id="modal-name"></h2>
+              <div class="modal-img-cont">
+                <img class="modal-image" id="modal-image" src="" alt="" />
+              </div>
+              <p><strong>Посада:</strong> <span id="modal-position"></span></p>
+              <p><strong>Освіта:</strong> <span id="modal-education"></span></p>
+              <p><strong>Досвід:</strong> <span id="modal-experience"></span></p>
+              <p><strong>Попередні місця роботи:</strong> <span id="modal-previous"></span></p>
+              <p><strong>Працює у нас:</strong> <span id="modal-current-duration"></span></p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-column">
+            <a class="logo">LOGO</a>
+            <p>
+              Залишайтеся на зв'язку з нами для отримання останніх новин та
+              акцій. Ми завжди раді вас вітати!
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Посилання</h3>
+            <ul>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Наші послуги</a></li>
+              <li><a href="#">Контакти</a></li>
+              <li><a href="#">Відгуки</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Акції</h3>
+            <ul>
+              <li><a href="#">Консультація</a></li>
+              <li><a href="#">Записатися</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Тренди</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Контакт</h3>
+            <ul>
+              <li><a href="#">Підписатися</a></li>
+              <li><a href="#">Команда експертів</a></li>
+              <li><a href="#">Інноваційні процедури</a></li>
+              <li><a href="#">Високоякісні продукти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Переваги</h3>
+            <ul>
+              <li><a href="#">Наша місія</a></li>
+              <li><a href="#">Довіра клієнтів</a></li>
+              <li><a href="#">Творчий підхід</a></li>
+              <li><a href="#">Проєктування образу</a></li>
+            </ul>
+            <form class="subscribe-form">
+              <input type="email" placeholder="Email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="left">
+            <strong>Краса 24/7</strong>
+            <p>© Copyright 2025</p>
+          </div>
+          <div class="right social-icons">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/x.png"
+                alt="Close"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/pinterest--v1.png"
+                alt="Pinterest"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/linkedin.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/facebook.png"
+                alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const employeeData = {
+        "Віка": {
+          img: "/images/workers/vika.jpg",
+          position: "Перукар-стиліст",
+          education: "Національний університет біотехнологій та природокористування",
+          experience: "4 роки в індустрії краси",
+          previous: "BeautyZone, GlamStudio",
+          currentDuration: "2 роки"
+        },
+        "Вероніка": {
+          img: "/images/workers/veronika.jpg",
+          position: "Майстер з манікюру",
+          education: "Київський національний університет культури",
+          experience: "3 роки досвіду",
+          previous: "LuxBeauty",
+          currentDuration: "1 рік"
+        },
+        "Марія": {
+          img: "/images/workers/maria.jpg",
+          position: "Візажист",
+          education: "Медичний коледж ім. Пирогова",
+          experience: "5 років практики",
+          previous: "KosmoStyle",
+          currentDuration: "3 роки"
+        },
+        "Єлизавета": {
+          img: "/images/workers/elizabeth.jpg",
+          position: "Бровіст-ламінатор",
+          education: "Львівський інститут краси",
+          experience: "6 років",
+          previous: "Nail&Beauty Bar",
+          currentDuration: "2,5 роки"
+        },
+        "Оксана": {
+          img: "/images/workers/oksana.jpg",
+          position: "Косметолог",
+          education: "Технікум косметології, Харків",
+          experience: "7 років",
+          previous: "Beauty World",
+          currentDuration: "4 роки"
+        },
+        "Даша": {
+          img: "/images/workers/dasha.jpg",
+          position: "Майстер депіляції",
+          education: "Коледж естетики, Дніпро",
+          experience: "2 роки",
+          previous: "NewStyle",
+          currentDuration: "6 місяців"
+        },
+        "Влада": {
+          img: "/images/workers/vlada.jpg",
+          position: "Майстер з педикюру",
+          education: "Київський коледж краси",
+          experience: "3 роки",
+          previous: "Glamour Touch",
+          currentDuration: "1 рік"
+        },
+        "Саша": {
+          img: "/images/workers/sasha.jpg",
+          position: "Майстер з нарощування вій",
+          education: "Центр професійної косметології",
+          experience: "5 років",
+          previous: "CosmoBeauty",
+          currentDuration: "2 роки"
+        },
+        "Олена": {
+          img: "/images/workers/olena.jpg",
+          position: "Масажист",
+          education: "Луцький медичний коледж",
+          experience: "4 роки",
+          previous: "Esthetic Studio",
+          currentDuration: "1,5 роки"
+        }
+      };
+
+      const modal = document.getElementById('employee-modal');
+      const closeBtn = modal.querySelector('.close');
+
+      function openModal(name) {
+        const data = employeeData[name];
+        if (data) {
+          document.getElementById('modal-name').innerText = name;
+          document.getElementById('modal-image').src = data.img;
+          document.getElementById('modal-image').alt = name;
+          document.getElementById('modal-position').innerText = data.position;
+          document.getElementById('modal-education').innerText = data.education;
+          document.getElementById('modal-experience').innerText = data.experience;
+          document.getElementById('modal-previous').innerText = data.previous;
+          document.getElementById('modal-current-duration').innerText = data.currentDuration;
+          modal.style.display = 'block';
+        }
+      }
+
+      document.querySelectorAll('.news-card').forEach(card => {
+        const name = card.dataset.name;
+
+        card.addEventListener('click', () => openModal(name));
+
+        const nameEl = card.querySelector('.news-name');
+        if (nameEl) {
+          nameEl.style.cursor = 'pointer';
+          nameEl.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openModal(name);
+          });
+        }
+      });
+
+      closeBtn.addEventListener('click', () => modal.style.display = 'none');
+      window.addEventListener('click', e => {
+        if (e.target === modal) modal.style.display = 'none';
+      });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.logo {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+h2 {
+  line-height: 29px;
+  font-family: "Playfair Display", serif;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  letter-spacing: inherit;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 300px;
+  align-self: center;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu ul {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column a.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+
+.brand-container{
+    display: flex;
+}
+
+.products-contaienr{
+    width: 70%;
+    margin-bottom: 60px;
+}
+
+.services {
+    margin: auto;
+    max-width: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+.subscribe-form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  width: 110px;
+}
+
+.subscribe-form button {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom .left strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.service {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Збереження квадратної форми */
+  overflow: hidden;
+  cursor: pointer;
+  border: 5px solid white; /* Рамка */
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.service img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  background-color: #74484b;
+}
+
+.service:hover img {
+  transform: scale(1.1);
+  filter: grayscale(80%);
+}
+
+.service-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+.brands {
+  width: 300px;
+  font-family: sans-serif;
+}
+
+.brand-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  transition: padding 0.3s ease;
+}
+
+.brand-item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.brand-item:hover {
+  padding: 20px 0; /* збільшення падінгу при наведенні */
+}
+
+.brand-logo {
+  font-weight: bold;
+}
+
+.brand-name {
+  color: #555;
+}

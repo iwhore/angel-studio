@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/feedback.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
+        <a href="./index.html"><img class="logo" src="/images/logo.PNG" alt=""></a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="/index.html">ГОЛОВНА</a></li>
+            <li><a href="/pages/team.html">НАША КОМАНДА</a></li>
+            <li><a href="/pages/services.html">ПОСЛУГИ</a></li>
+            <li><a href="/pages/job.html">ВАКАНСІЇ</a></li>
+            <li><a href="/pages/about-us.html">ПРО НАC</a></li>
+            <li><a href="/pages/feedback.html">ВІДГУКИ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container">
+      <h2>ВІДГУКИ</h2>
+      <div id="review-container" class="review-container">
+        <div class="review">
+          <div class="avatar">
+            <img src="/images/peaple/first.png" alt="Ольга" />
+          </div>
+          <div class="review-content">
+            <div class="name">Ольга</div>
+            <div class="text">
+              Моя сім’я є постійним клієнтом Вашого салону. Дуже зручно, що усі
+              необхідні послуги зібрані в одному салоні. А соляна кімната — це
+              мастхев кожної осені для наших дітлахів! І мама відпочиває в той
+              час, і діти не хворіють :)
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="avatar">
+            <img src="/images/peaple/second.png" alt="Ярина" />
+          </div>
+          <div class="review-content">
+            <div class="name">Ярина</div>
+            <div class="text">
+              Один з небагатьох салонів, де відповідально відносяться до
+              стерилізації інструментів! Дякую салону та майстру Яні за
+              найкращий нігтьовий сервіс! На манікюр лише до Вас.
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn" onclick="openModal('reviewModal')">Залишити відгук</button>
+        <button class="btn" onclick="openModal('bookingModal')">Записатися</button>
+      </div>
+    </section>
+    <div id="reviewModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('reviewModal')">&times;</span>
+        <h2>Залишити відгук</h2>
+        <form class="review-form" id="reviewForm" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Ваше ім’я" required />
+          <textarea name="message" placeholder="Ваш відгук" required></textarea>
+
+          <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+            <input type="hidden" name="rating" required />
+          </div>
+
+          <button type="submit">Надіслати</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Модальне вікно для запису -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('bookingModal')">&times;</span>
+        <h2>Записатися</h2>
+        <form>
+          <input type="text" placeholder="Ваше ім’я" required>
+          <input type="tel" placeholder="Номер телефону" required>
+          <input type="datetime-local" required>
+          <button type="submit">Записатися</button>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-column">
+            <a class="logo">LOGO</a>
+            <p>
+              Залишайтеся на зв'язку з нами для отримання останніх новин та
+              акцій. Ми завжди раді вас вітати!
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Посилання</h3>
+            <ul>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Наші послуги</a></li>
+              <li><a href="#">Контакти</a></li>
+              <li><a href="#">Відгуки</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Акції</h3>
+            <ul>
+              <li><a href="#">Консультація</a></li>
+              <li><a href="#">Записатися</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Тренди</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Контакт</h3>
+            <ul>
+              <li><a href="#">Підписатися</a></li>
+              <li><a href="#">Команда експертів</a></li>
+              <li><a href="#">Інноваційні процедури</a></li>
+              <li><a href="#">Високоякісні продукти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Переваги</h3>
+            <ul>
+              <li><a href="#">Наша місія</a></li>
+              <li><a href="#">Довіра клієнтів</a></li>
+              <li><a href="#">Творчий підхід</a></li>
+              <li><a href="#">Проєктування образу</a></li>
+            </ul>
+            <form class="subscribe-form">
+              <input type="email" placeholder="Email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="left">
+            <strong>Краса 24/7</strong>
+            <p>© Copyright 2025</p>
+          </div>
+          <div class="right social-icons">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/x.png"
+                alt="Close"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/pinterest--v1.png"
+                alt="Pinterest"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/linkedin.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/facebook.png"
+                alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = 'block';
+      }
+  
+      function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+      }
+  
+      // Закриття по кліку поза модальним вікном
+      window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+          event.target.style.display = 'none';
+        }
+      }
+    </script>
+    <script>
+      // ⭐ ЗІРКИ
+      const stars = document.querySelectorAll('.star-rating .star');
+      const ratingInput = document.querySelector('input[name="rating"]');
+      let selectedRating = 0;
+
+      stars.forEach(star => {
+        star.addEventListener('mouseover', () => {
+          const value = parseInt(star.getAttribute('data-value'));
+          highlightStars(value);
+        });
+
+        star.addEventListener('mouseout', () => {
+          highlightStars(selectedRating);
+        });
+
+        star.addEventListener('click', () => {
+          selectedRating = parseInt(star.getAttribute('data-value'));
+          ratingInput.value = selectedRating; // 🔥 важливо!
+          highlightStars(selectedRating);
+        });
+      });
+
+      function highlightStars(rating) {
+        stars.forEach(star => {
+          const starValue = parseInt(star.getAttribute('data-value'));
+          star.classList.toggle('selected', starValue <= rating);
+          star.classList.toggle('hovered', starValue <= rating);
+        });
+      }
+
+      // 📤 ВІДПРАВКА ФОРМИ
+      document.querySelector('#reviewModal form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const name = this.querySelector('input[name="name"]').value.trim();
+        const message = this.querySelector('textarea[name="message"]').value.trim();
+        const rating = Number(this.querySelector('input[name="rating"]').value); // 🔥 беремо із hidden
+
+        if (!name || !message || !rating) {
+          alert('❗ Будь ласка, заповніть всі поля, включаючи оцінку');
+          return;
+        }
+
+        try {
+          const response = await fetch('/api/reviews', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, message, rating }) // ✅
+          });
+
+          const data = await response.json();
+          if (response.ok) {
+            alert('✅ Відгук надіслано!');
+            this.reset();
+            selectedRating = 0; // скидаємо вибір зірок
+            highlightStars(0);
+            closeModal('reviewModal');
+          } else {
+            alert('❌ Помилка: ' + data.error);
+          }
+        } catch (err) {
+          alert('❌ Виникла помилка при відправці форми');
+          console.error(err);
+        }
+      });
+    </script>
+  </body>
+</html>
