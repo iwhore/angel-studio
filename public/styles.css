@@ -134,19 +134,19 @@ body {
 /* -----------ХІРОО------- */
 .hero {
   position: relative;
-  height: 800px;
-  background-image: url("./images/hero.png");
+  height: 900px;
+  background-image: url("./images/1000.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero-text {
   position: absolute;
-  bottom: 80px;
-  right: 290px;
+  top: 80px;
+  right: 120px;
   color: white;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 0px;
   text-align: right;
   border-bottom: 1px solid #fff;
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .hero-text p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   margin-bottom: 5px;
 }
@@ -202,6 +202,7 @@ body {
   color: #575757;
   width: 1000px;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .cards-container {
