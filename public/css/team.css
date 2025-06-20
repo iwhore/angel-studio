@@ -148,7 +148,17 @@ h2 {
 
 .news-card div {
   background: #74484b;
-  height: 300px;
+  height: 400px;
+  width: 280px;
+  overflow: hidden;
+   object-position: center bottom;
+}
+
+.news-card div img{
+  height: 400px;
+  width: 280px;
+  object-fit: cover;
+  object-position: center bottom;
 }
 
 .news-name {
