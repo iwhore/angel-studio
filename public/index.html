@@ -25,8 +25,22 @@
             <li><a href="./pages/about-us.html">ПРО НАC</a></li>
             <li><a href="./pages/feedback.html">ВІДГУКИ</a></li>
           </ul>
+           <div class="burger" id="burger">&#9776;</div>
         </nav>
       </div>
+      <div class="modal-menu" id="modalMenu">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <ul>
+            <li><a href="./index.html">ГОЛОВНА</a></li>
+            <li><a href="./pages/team.html">НАША КОМАНДА</a></li>
+            <li><a href="./pages/services.html">ПОСЛУГИ</a></li>
+            <li><a href="./pages/job.html">ВАКАНСІЇ</a></li>
+            <li><a href="./pages/about-us.html">ПРО НАC</a></li>
+            <li><a href="./pages/feedback.html">ВІДГУКИ</a></li>
+          </ul>
+      </div>
+    </div>
     </header>
     <section class="hero">
       <div class="container">
@@ -125,22 +139,25 @@
           справжнього задоволення!
         </p>
         <div class="services">
-          <div class="service">
+          <a href="./pages/services.html#hair" class="service">
             <img src="./images/hair.jpg" alt="Перукарські послуги" />
             <div class="service-text">Перукарські послуги</div>
-          </div>
-          <div class="service">
+          </a>
+
+          <a href="./pages/services.html#makeup" class="service">
             <img src="./images/make.jpg" alt="Візаж" />
             <div class="service-text">Макіяж</div>
-          </div>
-          <div class="service">
+          </a>
+
+          <a href="./pages/services.html#epilation" class="service">
             <img src="./images/epilation.jpg" alt="Косметологія" />
             <div class="service-text">Лазерна епіляція</div>
-          </div>
-          <div class="service">
+          </a>
+
+          <a href="./pages/services.html#manicure" class="service">
             <img src="./images/manikur.jpg" alt="Манікюр Педикюр" />
             <div class="service-text">Манікюр<br />Педикюр</div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -414,6 +431,26 @@
     } catch (error) {
       console.error('❌ Помилка запиту:', error);
       alert('⚠️ Сталася помилка при надсиланні форми.');
+    }
+  });
+</script>
+<script>
+  const burger = document.getElementById("burger");
+  const modalMenu = document.getElementById("modalMenu");
+  const closeModal = document.getElementById("closeModal");
+
+  burger.addEventListener("click", () => {
+    modalMenu.style.display = "flex";
+  });
+
+  closeModal.addEventListener("click", () => {
+    modalMenu.style.display = "none";
+  });
+
+  // Закриття по кліку поза модальним вікном
+  window.addEventListener("click", (e) => {
+    if (e.target === modalMenu) {
+      modalMenu.style.display = "none";
     }
   });
 </script>

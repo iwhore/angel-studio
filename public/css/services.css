@@ -10,6 +10,10 @@
   p {
     margin-top: 0;
   }
+
+  html {
+  scroll-behavior: smooth;
+}
 .logo {
   width: 200px;
   height: 100px;
